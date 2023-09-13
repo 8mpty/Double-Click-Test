@@ -1,0 +1,8 @@
+* {
+  font-family: cursive;
+}
+
+:root {
+  --darkgrey: rgb(15, 15, 15);
+  --lightwhite: rgb(247, 247, 247);
+}

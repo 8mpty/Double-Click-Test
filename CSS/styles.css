@@ -1,0 +1,157 @@
+@import url(consts.css);
+
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: var(--lightwhite);
+    color: var(--darkgrey);
+    font-family: cursive;
+  }
+  .clickBox:hover,
+  .cc {
+    background-color: var(--darkgrey);
+    color: var(--lightwhite);
+    border: 5px solid transparent;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--darkgrey);
+    color: var(--lightwhite);
+    font-family: cursive;
+  }
+  .clickBox:hover,
+  .cc {
+    background-color: var(--lightwhite);
+    color: var(--darkgrey);
+    border: 5px solid transparent;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.clickBox {
+  border: 5px solid;
+  width: 900px;
+  height: 400px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+}
+
+span,
+button,
+.opts {
+  font-size: 20px;
+  font-family: inherit;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.top-heading {
+  margin-bottom: 60px;
+}
+
+.container .side {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  text-align: center;
+}
+
+.count {
+  font-size: 20px;
+}
+
+.container .logs {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+textarea {
+  font-size: 17px;
+  padding: 20px;
+  min-width: 220px;
+  min-height: 80vh;
+  overflow: hidden;
+  resize: none;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+button,
+.clickBox {
+  cursor: pointer;
+}
+
+.status {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: green;
+}
+
+.dc {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: red;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.opts {
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.cc {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 5px;
+  width: max-content;
+}
+
+.sideL {
+  margin: 10px;
+}
+
+#reset {
+  cursor: pointer;
+}

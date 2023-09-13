@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script type="text/javascript" src="JS/script.js" defer></script>
+    <title>Double Click Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="top-heading">Double Click Tester</h1>
+      <div class="div" style="margin: 0px 0px 25px 0px">
+        <span>Status: <span class="status">Not Double Clicking</span></span>
+        <a id="reset" style="font-size: 25px; margin: 10px"
+          ><i class="fa fa-refresh" aria-hidden="true"></i
+        ></a>
+      </div>
+      <p style="font-style: italic; font-size: 12px">
+        ~ Detects double clicks if the clicks are faster than 0.08s ~
+      </p>
+      <div class="clickBox">
+        <span class="noselect">Click Here</span>
+      </div>
+      <div class="side hidden">
+        <span class="sideL"
+          >Single Click Count: <span id="count" class="count cc">0</span></span
+        >
+        <span class="sideL"
+          >Fast Double Click Count:
+          <span id="dcCount" class="dcCount cc">0</span></span
+        >
+      </div>
+      <div class="logs hidden">
+        <span>Logs & Timings</span>
+        <textarea id="textarea" readonly></textarea>
+      </div>
+      <div>
+        <div class="opts">
+          <input type="checkbox" id="disCount" class="disCount" /><label
+            for="disCount"
+            >Display Counts</label
+          >
+          <input type="checkbox" id="disLogs" class="disLogs" /><label
+            for="disLogs"
+            >Display Logs</label
+          >
+        </div>
+        <p style="text-align: center">
+          <a href="https://codepen.io/blink172/pen/vERyxK">Credits</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
